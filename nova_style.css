@@ -1,0 +1,27 @@
+body {
+    background-color: #393D47;
+    font-family: Fink;
+    color: white;
+    font-size: calc(15px + 0.390625vw);
+}
+
+@font-face {
+    font-family: Fink;
+    src: url(FinkHeavy.woff);
+  }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: calc(30px + 0.390625vw);
+  justify-content: right;
+  padding-right: calc(20px + 0.390625vw);
+  padding-top: calc(10px + 0.390625vw);
+}
+
+.navbar ul a {
+  text-decoration: none;
+  color: white;
+}
