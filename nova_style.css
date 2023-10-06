@@ -1,27 +1,101 @@
 body {
-    background-color: #393D47;
-    font-family: Fink;
-    color: white;
-    font-size: calc(15px + 0.390625vw);
+  background-color: #393d47;
+  font-family: Fink;
+  color: white;
 }
 
 @font-face {
-    font-family: Fink;
-    src: url(FinkHeavy.woff);
-  }
+  font-family: Fink;
+  src: url(FinkHeavy.woff);
+}
 
-ul {
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    z-index: 100;
+}
+
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  gap: calc(30px + 0.390625vw);
-  justify-content: right;
-  padding-right: calc(20px + 0.390625vw);
-  padding-top: calc(10px + 0.390625vw);
 }
 
-.navbar ul a {
+.navbar a {
   text-decoration: none;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbar ul {
+        gap: 40px;
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 25px;
+    }
+
+    .home {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar ul {
+    gap: 30px;
+    padding-right: 60px;
+    padding-top: 30px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+  
+  .home {
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .navbar ul {
+      gap: 34px;
+      padding-right: 68px;
+      padding-top: 34px;
+    }
+  
+    .navbar a {
+      font-size: 20px;
+    }
+
+    .home {
+        padding-top: 100px;
+    }
+  }
+
+@media only screen and (min-width: 992px) {
+  .navbar ul {
+    gap: 40px;
+    padding-right: 80px;
+    padding-top: 40px;
+  }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .home {
+    padding-top: 120px;
+  }
 }
