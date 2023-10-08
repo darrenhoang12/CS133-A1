@@ -9,12 +9,30 @@ body {
   src: url(FinkHeavy.woff);
 }
 
+.caticon,
+.caticonbounce {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: auto;
+  z-index: 1000;
+  color: white;
+}
+
+.lock:hover .icon-unlock,
+.lock .icon-lock {
+  display: none;
+}
+.lock:hover .icon-lock {
+  display: inline;
+}
+
 .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: auto;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: auto;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -29,32 +47,37 @@ body {
   color: white;
 }
 
-@media only screen and (max-width: 600px) {
-    .navbar {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+@media only screen and (max-width: 599px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .navbar ul {
-        gap: 40px;
-        padding-top: 20px;
-        justify-content: center;
-    }
+  .navbar ul {
+    gap: 60px;
+    padding-top: 20px;
+    justify-content: center;
+  }
 
-    .navbar a {
-        font-size: 25px;
-    }
+  .navbar a {
+    font-size: 20px;
+  }
 
-    .home {
-        padding-top: 60px;
-    }
+  .home {
+    padding-top: 60px;
+  }
+
+  .caticon,
+  .caticonbounce {
+    opacity: 0;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .navbar ul {
-    gap: 30px;
+    gap: 40px;
     padding-right: 60px;
     padding-top: 30px;
   }
@@ -62,27 +85,41 @@ body {
   .navbar a {
     font-size: 20px;
   }
-  
+
   .home {
     padding-top: 80px;
+  }
+
+  .caticon,
+  .caticonbounce {
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 25px;
   }
 }
 
 @media only screen and (min-width: 768px) {
-    .navbar ul {
-      gap: 34px;
-      padding-right: 68px;
-      padding-top: 34px;
-    }
-  
-    .navbar a {
-      font-size: 20px;
-    }
-
-    .home {
-        padding-top: 100px;
-    }
+  .navbar ul {
+    gap: 40px;
+    padding-right: 68px;
+    padding-top: 34px;
   }
+
+  .navbar a {
+    font-size: 20px;
+  }
+
+  .home {
+    padding-top: 100px;
+  }
+
+  .caticon,
+  .caticonbounce {
+    font-size: 35px;
+    padding-left: 40px;
+    padding-top: 25px;
+  }
+}
 
 @media only screen and (min-width: 992px) {
   .navbar ul {
@@ -97,5 +134,12 @@ body {
 
   .home {
     padding-top: 120px;
+  }
+
+  .caticon,
+  .caticonbounce {
+    font-size: 45px;
+    padding-left: 40px;
+    padding-top: 25px;
   }
 }
