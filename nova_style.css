@@ -1,7 +1,7 @@
 body {
-  background-color: #393d47;
+  background-color: #d3d3d3;
   font-family: Fink;
-  color: white;
+  color: #393d47;
 }
 
 @font-face {
@@ -16,7 +16,7 @@ body {
   left: 0;
   width: auto;
   z-index: 1000;
-  color: white;
+  color: #393d47;
 }
 
 .lock:hover .icon-unlock,
@@ -44,7 +44,7 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: white;
+  color: #393d47;
 }
 
 @media only screen and (max-width: 599px) {
@@ -65,8 +65,27 @@ body {
     font-size: 20px;
   }
 
-  .home {
-    padding-top: 60px;
+  .caticon,
+  .caticonbounce {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navbar ul {
+    gap: 75px;
+    padding-top: 30px;
+  }
+
+  .navbar a {
+    font-size: 20px;
   }
 
   .caticon,
@@ -75,42 +94,15 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .navbar ul {
-    gap: 40px;
-    padding-right: 60px;
-    padding-top: 30px;
-  }
-
-  .navbar a {
-    font-size: 20px;
-  }
-
-  .home {
-    padding-top: 80px;
-  }
-
-  .caticon,
-  .caticonbounce {
-    font-size: 30px;
-    padding-left: 40px;
-    padding-top: 25px;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .navbar ul {
-    gap: 40px;
+    gap: 75px;
     padding-right: 68px;
     padding-top: 34px;
   }
 
   .navbar a {
     font-size: 20px;
-  }
-
-  .home {
-    padding-top: 100px;
   }
 
   .caticon,
@@ -121,19 +113,15 @@ body {
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) {
   .navbar ul {
-    gap: 40px;
+    gap: 75px;
     padding-right: 80px;
     padding-top: 40px;
   }
 
   .navbar a {
     font-size: 20px;
-  }
-
-  .home {
-    padding-top: 120px;
   }
 
   .caticon,
