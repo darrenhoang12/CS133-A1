@@ -316,6 +316,10 @@ form textarea {
     font-size: 1.1rem;
     width: 300px;
   }
+
+  .submit {
+    width: 304px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -403,6 +407,10 @@ form textarea {
   form textarea {
     font-size: 1.1rem;
     width: 300px;
+  }
+
+  .submit {
+    width: 304px;
   }
 }
 
@@ -496,5 +504,9 @@ form textarea {
   form textarea {
     font-size: 1.25rem;
     width: 400px;
+  }
+
+  .submit {
+    width: 404px;
   }
 }
