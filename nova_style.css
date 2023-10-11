@@ -193,6 +193,7 @@ body {
 
 form h1 {
   width: 100%;
+  margin-top: 0;
 }
 
 form label,
@@ -292,6 +293,12 @@ form textarea {
   .contact img {
     display: none;
   }
+
+  form label,
+  form input,
+  form textarea {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -367,16 +374,17 @@ form textarea {
   .contact {
     padding-top: 128px;
     padding-bottom: 58px;
-    gap: 100px;
+    gap: 50px;
   }
 
-  .contact img {
-    width: 275px;
+  .contact-pic img {
+    width: 350px;
   }
 
   form label,
   form input,
   form textarea {
+    font-size: 1.1rem;
     width: 300px;
   }
 }
@@ -462,13 +470,14 @@ form textarea {
     width: 500px;
   }
 
-  .contact img {
-    width: 325px;
+  .contact-pic img {
+    width: 390px;
   }
 
   form label,
   form input,
   form textarea {
+    font-size: 1.25rem;
     width: 400px;
   }
 }
