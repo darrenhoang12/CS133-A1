@@ -1,7 +1,7 @@
 body {
-  background-color: #EADDC7;
+  background-color: #eaddc7;
   font-family: Fink;
-  color: #3C290B;
+  color: #3c290b;
 }
 
 @font-face {
@@ -16,7 +16,7 @@ body {
   top: 0;
   left: 0;
   width: auto;
-  color: #3C290B;
+  color: #3c290b;
 }
 
 .lock:hover .icon-unlock,
@@ -43,7 +43,13 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #3C290B;
+  color: #3c290b;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #bf9b30;
+  transition: color 0.3s;
 }
 
 /* About CSS */
@@ -104,7 +110,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: #EADDC7;
+  color: white;
   z-index: 2;
 }
 
@@ -217,7 +223,8 @@ form textarea {
 
 .submit {
   margin-top: 30px;
-  color: #3C290B;
+  color: #eaddc7;
+  background-color: #a67c00;
 }
 
 /* Responsive CSS */
@@ -360,7 +367,7 @@ form textarea {
   .contact {
     padding-top: 128px;
     padding-bottom: 58px;
-    gap: 100px
+    gap: 100px;
   }
 
   .contact img {
@@ -396,7 +403,7 @@ form textarea {
 
   .about {
     height: 90vh;
-    padding-top: 146px;    
+    padding-top: 146px;
   }
 
   .about-text {
@@ -443,13 +450,13 @@ form textarea {
     width: 350px;
     height: 450px;
   }
-  
+
   .contact {
     padding-top: 146px;
     padding-bottom: 66px;
-    gap: 50px
+    gap: 50px;
   }
-  
+
   .contact form {
     display: block;
     width: 500px;
