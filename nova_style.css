@@ -1,7 +1,7 @@
 body {
-  background-color: #d3d3d3;
+  background-color: #EADDC7;
   font-family: Fink;
-  color: #393d47;
+  color: #3C290B;
 }
 
 @font-face {
@@ -16,7 +16,7 @@ body {
   top: 0;
   left: 0;
   width: auto;
-  color: #393d47;
+  color: #3C290B;
 }
 
 .lock:hover .icon-unlock,
@@ -43,7 +43,7 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #393d47;
+  color: #3C290B;
 }
 
 /* About CSS */
@@ -64,10 +64,6 @@ body {
 .about ul {
   padding: 0;
   list-style-type: none;
-}
-
-.about-pic img {
-  border-radius: 20px;
 }
 
 /* Gallery CSS */
@@ -108,7 +104,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  color: #d3d3d3;
+  color: #EADDC7;
   z-index: 2;
 }
 
@@ -188,10 +184,6 @@ body {
   justify-content: center;
 }
 
-.contact img {
-  border-radius: 20px;
-}
-
 form h1 {
   width: 100%;
 }
@@ -224,6 +216,7 @@ form textarea {
 
 .submit {
   margin-top: 30px;
+  color: #3C290B;
 }
 
 /* Responsive CSS */
