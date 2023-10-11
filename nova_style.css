@@ -182,6 +182,46 @@ body {
   background-image: url("./photos/yawn.JPG");
 }
 
+/* Contact page CSS */
+.contact {
+  display: flex;
+  justify-content: center;
+}
+
+form h1 {
+  width: 100%;
+}
+
+form label,
+form input,
+form textarea {
+  display: block;
+  font-family: Fink;
+  width: 400px;
+  border-radius: 5px;
+  border: 0;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  display: flex;
+  padding-top: 30px;
+}
+
+.checkbox input,
+.checkbox label {
+  width: auto;
+  margin: 0;
+}
+
+.checkbox label {
+  padding-left: 10px;
+}
+
+.submit {
+  margin-top: 30px;
+}
+
 /* Responsive CSS */
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -237,6 +277,15 @@ body {
 
   .photo h3 {
     font-size: 1.25rem;
+  }
+
+  .contact {
+    padding-top: 86px;
+    padding-bottom: 30px;
+  }
+
+  .contact img {
+    display: none;
   }
 }
 
@@ -309,6 +358,22 @@ body {
     width: 300px;
     height: 400px;
   }
+
+  .contact {
+    padding-top: 128px;
+    padding-bottom: 58px;
+    gap: 100px
+  }
+
+  .contact img {
+    width: 275px;
+  }
+
+  form label,
+  form input,
+  form textarea {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -379,5 +444,26 @@ body {
   .photo {
     width: 350px;
     height: 450px;
+  }
+  
+  .contact {
+    padding-top: 146px;
+    padding-bottom: 66px;
+    gap: 50px
+  }
+  
+  .contact form {
+    display: block;
+    width: 500px;
+  }
+
+  .contact img {
+    width: 350px;
+  }
+
+  form label,
+  form input,
+  form textarea {
+    width: 400px;
   }
 }
