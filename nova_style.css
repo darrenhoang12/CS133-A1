@@ -1,6 +1,6 @@
 body {
   background-color: #eaddc7;
-  font-family: Fink;
+  font-family: Fink, Helvetica;
   color: #3c290b;
 }
 
@@ -204,7 +204,7 @@ form label,
 form input,
 form textarea {
   display: block;
-  font-family: Fink;
+  font-family: Fink, Helvetica;
   width: 400px;
   border-radius: 5px;
   border: 0;
