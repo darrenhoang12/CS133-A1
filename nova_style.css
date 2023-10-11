@@ -70,6 +70,118 @@ body {
   border-radius: 20px;
 }
 
+/* Gallery CSS */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.photo {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s;
+  text-align: left;
+}
+
+/* Adds a dark overlay, hidden before the hover. Reveals the dark overlay on hover.*/
+.photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.photo:hover::before {
+  opacity: 1;
+}
+
+.photo h3,
+.photo p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #d3d3d3;
+  z-index: 2;
+}
+
+.photo h3 {
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+.photo p {
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Photo description appears on hover */
+.photo h3,
+.photo p {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.photo:hover h3,
+.photo:hover p {
+  opacity: 1;
+}
+
+.airplane {
+  background-image: url("./photos/airplane.jpg");
+}
+
+.backpack {
+  background-image: url("./photos/backpack.JPG");
+}
+
+.bed {
+  background-image: url("./photos/bed.jpg");
+}
+
+.birthday {
+  background-image: url("./photos/birthday.jpg");
+}
+
+.derp {
+  background-image: url("./photos/derp.JPG");
+}
+
+.flowers {
+  background-image: url("./photos/flowers.JPG");
+}
+
+.frog {
+  background-image: url("./photos/frog.JPG");
+}
+
+.grumpy {
+  background-image: url("./photos/grumpy.JPG");
+}
+
+.keyboard {
+  background-image: url("./photos/keyboard.jpg");
+}
+
+.kingkong {
+  background-image: url("./photos/kingkong.JPG");
+}
+
+.shower {
+  background-image: url("./photos/shower.JPG");
+}
+
+.yawn {
+  background-image: url("./photos/yawn.JPG");
+}
+
 /* Responsive CSS */
 @media only screen and (max-width: 768px) {
   .navbar {
@@ -111,6 +223,21 @@ body {
   .about-text li {
     padding-bottom: 10px;
   }
+
+  .gallery {
+    padding-top: 86px;
+    padding-bottom: 30px;
+    gap: 40px;
+  }
+
+  .photo {
+    width: 250px;
+    height: 350px;
+  }
+
+  .photo h3 {
+    font-size: 1.25rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -132,7 +259,7 @@ body {
     padding-top: 25px;
     padding-bottom: 58px;
   }
-  
+
   .about {
     height: 70vh;
     padding-top: 128px;
@@ -171,6 +298,17 @@ body {
   .about-pic img {
     width: 325px;
   }
+
+  .gallery {
+    padding-top: 128px;
+    padding-bottom: 58px;
+    gap: 40px;
+  }
+
+  .photo {
+    width: 300px;
+    height: 400px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -195,12 +333,11 @@ body {
 
   .about {
     height: 90vh;
-    padding-top: 146px;
-    gap: 150px;
+    padding-top: 146px;    
   }
 
   .about-text {
-    width: 500px
+    width: 500px;
   }
 
   .about-pic {
@@ -231,5 +368,16 @@ body {
 
   .about-pic img {
     width: 400px;
+  }
+
+  .gallery {
+    padding-top: 146px;
+    padding-bottom: 66px;
+    gap: 40px;
+  }
+
+  .photo {
+    width: 350px;
+    height: 450px;
   }
 }
