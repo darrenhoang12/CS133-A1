@@ -302,6 +302,7 @@ form textarea {
   form input,
   form textarea {
     font-size: 1.1rem;
+    width: 300px;
   }
 }
 
