@@ -130,6 +130,7 @@ body {
   opacity: 1;
 }
 
+/* Created divs with background images */
 .airplane {
   background-image: url("./photos/airplane.jpg");
 }
