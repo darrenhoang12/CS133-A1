@@ -9,6 +9,10 @@ body {
   src: url(FinkHeavy.woff);
 }
 
+.ignore {
+  display: none;
+}
+
 /* Navigation bar CSS */
 .caticon,
 .caticonbounce {

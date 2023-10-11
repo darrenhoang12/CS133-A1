@@ -22,12 +22,14 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
-    - Image
-    - 
+    - Images with descriptive alt attributes
+    - Appropriate headings and paragraph text
+    - Multiple pages with navigation between them
+    - Custom icon with Font Awesome
 
 
 (b) CSS features
-
+    - Modifying padding and margins
 
 
 (c) Advanced features
