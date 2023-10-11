@@ -189,6 +189,18 @@ body {
   background-image: url("./photos/yawn.JPG");
 }
 
+.toy {
+  background-image: url("./photos/toy.jpg");
+}
+
+.water {
+  background-image: url("./photos/water.jpg");
+}
+
+.wire {
+  background-image: url("./photos/wire.JPG");
+}
+
 /* Contact page CSS */
 .contact {
   display: flex;
