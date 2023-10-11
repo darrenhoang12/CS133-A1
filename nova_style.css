@@ -188,6 +188,10 @@ body {
   justify-content: center;
 }
 
+.contact img {
+  border-radius: 20px;
+}
+
 form h1 {
   width: 100%;
 }
@@ -458,7 +462,7 @@ form textarea {
   }
 
   .contact img {
-    width: 350px;
+    width: 325px;
   }
 
   form label,
