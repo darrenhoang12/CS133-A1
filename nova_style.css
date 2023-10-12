@@ -220,7 +220,7 @@ form textarea {
   width: 400px;
   border-radius: 5px;
   border: 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .checkbox {
@@ -239,7 +239,7 @@ form textarea {
 }
 
 .submit {
-  margin-top: 30px;
+  margin-top: 35px;
   color: #eaddc7;
   background-color: #a67c00;
 }
@@ -260,7 +260,7 @@ form textarea {
   }
 
   .navbar a {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   .caticon,
@@ -302,7 +302,7 @@ form textarea {
   }
 
   .contact {
-    padding-top: 86px;
+    padding-top: 128px;
     padding-bottom: 30px;
   }
 
@@ -331,7 +331,7 @@ form textarea {
   }
 
   .navbar a {
-    font-size: 20px;
+    font-size: 1.5rem;
   }
 
   .caticon,
@@ -345,7 +345,7 @@ form textarea {
   .about {
     height: 70vh;
     padding-top: 128px;
-    gap: 150px;
+    gap: 40px;
   }
 
   .about-text {
@@ -353,7 +353,7 @@ form textarea {
   }
 
   .about-pic {
-    width: 225px;
+    width: 325px;
   }
 
   .greeting-header {
@@ -423,7 +423,7 @@ form textarea {
   }
 
   .navbar a {
-    font-size: 20px;
+    font-size: 1.75rem;
   }
 
   .caticon,
@@ -444,7 +444,7 @@ form textarea {
   }
 
   .about-pic {
-    width: 300px;
+    width: 400px;
   }
 
   .greeting-header {
@@ -508,5 +508,110 @@ form textarea {
 
   .submit {
     width: 404px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .navbar ul {
+    gap: 75px;
+    padding-right: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .navbar a {
+    font-size: 2rem;
+  }
+
+  .caticon,
+  .caticonbounce {
+    font-size: 4rem;
+    padding-left: 60px;
+    padding-top: 35px;
+    padding-bottom: 66px;
+  }
+
+  .about {
+    height: 90vh;
+    padding-top: 146px;
+  }
+
+  .about-text {
+    width: 800px;
+  }
+
+  .about-pic {
+    width: 500px;
+  }
+
+  .about-pic {
+    width: 500px;
+  }
+
+  .greeting-header {
+    padding-bottom: 10px;
+  }
+
+  .obsessions-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about li {
+    padding-bottom: 20px;
+    font-size: 1.6rem;
+  }
+
+  .about h2 {
+    font-size: 3rem;
+  }
+
+  .about p {
+    font-size: 1.6rem;
+  }
+
+  .about-pic img {
+    width: 500px;
+  }
+
+  .gallery {
+    padding-top: 146px;
+    padding-bottom: 66px;
+    gap: 40px;
+  }
+
+  .photo {
+    width: 400px;
+    height: 450px;
+  }
+
+  .contact {
+    padding-top: 146px;
+    padding-bottom: 66px;
+    gap: 50px;
+  }
+
+  .contact h1 {
+    font-size: 3rem;
+  }
+
+  .contact form {
+    display: block;
+    width: 600px;
+  }
+
+  .contact-pic img {
+    width: 500px;
+  }
+
+  form label,
+  form input,
+  form textarea {
+    font-size: 1.6rem;
+    width: 500px;
+  }
+
+  .submit {
+    width: 504px;
   }
 }
